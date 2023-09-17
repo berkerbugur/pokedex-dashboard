@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next build && next start",
+    "docker:image": "docker build --no-cache -t pokedex-app .",
+    "docker:run": "docker build --no-cache -t pokedex-app . && docker run -p 3000:3000 -d --name pokedex-app"
   },
   "dependencies": {
     "@types/node": "20.5.9",

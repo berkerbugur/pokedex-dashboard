@@ -1,0 +1,30 @@
+.pokecard {
+    @apply m-[15px] justify-between cursor-pointer;
+}
+
+.pokecard-container {
+    @apply bg-blue-600 border-double border-x-[2px] border-b-[2px] border-gray-600 rounded-lg
+    min-w-[200px] sm:min-w-[300px] min-h-[300px] sm:min-h-[200px]
+    basis-full mx-auto flex flex-col sm:flex-row
+    transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:drop-shadow-xl duration-100;
+}
+
+.pokecard-charImg {
+    @apply border-x-[2px] border-yellow-300 rounded-full w-fit md:h-auto mx-auto;
+}
+
+.pokecard-info-container {
+    @apply flex flex-col justify-start p-2 m-auto border-t-2 sm:border-l-2 sm:border-t-0 sm:ml-0 sm:pl-4;
+}
+
+.pokecard-info-name {
+    @apply my-auto text-xl text-neutral-800 dark:text-neutral-50 font-extrabold;
+}
+
+.pokecard-info-id {
+    @apply ml-2 my-auto p-0.5 bg-[#f6af3b] rounded-full min-w-[20px] min-h-[20px] text-xs text-center;
+}
+
+.pokecard-info-type {
+    @apply p-1 border-gray-600 rounded-full font-bold text-sm border-[1px];
+}
