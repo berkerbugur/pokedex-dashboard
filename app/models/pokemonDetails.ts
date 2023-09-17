@@ -1,5 +1,5 @@
 import {PokemonDetailsResponse, PokemonType} from "@/app/api/pokemon-api/models/response/pokemonDetails.response";
-import {typeColorMap} from "@/app/constants/types";
+import {typeColorMap} from "@/app/constant/type";
 import {dmToM, hgToKg} from "@/app/helper/metricHelper";
 import {capitalize} from "@/app/helper/stringHelper";
 
@@ -7,6 +7,7 @@ interface Type {
     name: string;
     color: string
 }
+
 export class PokemonDetails {
     id: number;
     name: string;
@@ -39,7 +40,7 @@ export class PokemonDetails {
         const tcMap: Array<Type> = []
 
         types.forEach(type => {
-            tcMap.push({ name: capitalize(type.type.name), color: typeColorMap.get(type.type.name) || ''} as Type);
+            tcMap.push({name: capitalize(type.type.name), color: typeColorMap.get(type.type.name) || ''} as Type);
         })
 
         return tcMap;

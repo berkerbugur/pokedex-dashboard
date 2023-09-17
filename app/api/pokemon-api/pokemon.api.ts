@@ -1,5 +1,5 @@
 import axios, {AxiosInstance} from "axios";
-import {pokeApiUrl} from "@/app/constants/constants";
+import {pokeApiUrl} from "@/app/constant/url";
 import {PokemonListItemResponse} from "@/app/api/pokemon-api/models/response/pokemonListItem.response";
 import {PokemonDetailsResponse} from "@/app/api/pokemon-api/models/response/pokemonDetails.response";
 
@@ -29,7 +29,7 @@ export class PokemonApi {
 
     public async getPokemonDetails(name: string): Promise<PokemonDetailsResponse> {
         return await this.api.get(getPokeDetails + name).then(resp => {
-            return resp.data || null
+                return resp.data || null
             }
         ).catch(err => {
             console.log('PokemonApi.getPokemonDetails ERROR - Something not cool happened: ' + err);

@@ -14,12 +14,12 @@ export const PokeList = () => {
                 setPokemons(resp)
             }).catch()
     }, [])
-// grid grid-cols-4 gap-6
+
     return (
-        <div className='flex flex-row flex-wrap justify-center'>
+        <div className='flex-row-center flex-wrap'>
             {
                 pokemons.map(pokemon => (
-                <PokeCard key={pokemon.name} name={pokemon.name} />
+                    <PokeCard key={pokemon.name} name={pokemon.name}/>
                 ))
             }
         </div>

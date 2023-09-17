@@ -1,4 +1,27 @@
+@import "app/components/pokecard/pokecard.css";
+@import "app/components/header/sticky_header.css";
+@import "app/components/footer/sticky_footer.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.flex-between {
+    @apply flex justify-between;
+}
+
+.flex-center {
+    @apply flex justify-center
+}
+
+.flex-row-between {
+    @apply flex flex-row justify-between;
+}
+
+.flex-row-center {
+    @apply flex flex-row justify-center;
+}
+
+.text-sm-center {
+    @apply text-sm text-center;
+}

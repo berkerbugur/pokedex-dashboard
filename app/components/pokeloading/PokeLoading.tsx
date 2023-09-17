@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {PokeLoad} from "@/app/constants/images";
+import {PokeLoad} from "@/app/constant/image";
 
 export const PokeLoading = () => {
     return (
