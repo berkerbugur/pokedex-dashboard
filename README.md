@@ -56,3 +56,7 @@ yarn docker:image
 ```bash
 npm start
 ```
+
+
+## Project Demo
+https://pokedex-dashboard-beta.vercel.app/
